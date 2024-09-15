@@ -9,10 +9,16 @@
   </head>
   <body>
     <header role="banner">
-      <nav class="navbar" role="navigation">
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <div class="navbar-logo">
-          <a href="#">Welcome to my webpage!</a>
+          <a href="#">Banksalt</a>
         </div>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
         <ul class="navbar-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -22,18 +28,33 @@
       </nav>
     </header>
 
+    <!-- Hero section -->
+    <section class="hero-background">
+      <div class="hero-text">
+        <h1>We are Banksalt</h1>
+        <p>And we make modern websites for your company!</p>
+        <button>Hire us</button>
+      </div>
+    </section>
+
     <main role="main">
+      <!-- Section for image and text -->
       <section class="content">
-        <header>
-          <h2 class="section1">About Me</h2>
-        </header>
-        <p class="section1">
-          This is some information about me. I am a web developer who loves
-          creating websites. Here's a picture of my latest work :D
-        </p>
+        <div class="image-text-container">
+          <img src="" alt="Description of image" class="responsive-img" />
+          <div class="text-content">
+            <h2>About the service</h2>
+            <p>
+              This is an example of a project where we created a modern website
+              with beautiful responsive design. The image shows a representation of
+              the design in action, with a focus on creativity and functionality.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer" role="contentinfo">
       <p>&copy; 2024 Banksalt</p>
       <p>
@@ -41,5 +62,7 @@
         <a href="#">CONTACTS</a>
       </p>
     </footer>
+
+    <script src="burger.js"></script>
   </body>
 </html>
