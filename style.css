@@ -159,25 +159,6 @@ html, body{
 
   
  @media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
 
   .hero-background{
     background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.897)), url("hero2jpg.jpg");
@@ -186,6 +167,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 1;
     
   }
   .hero-text{
@@ -197,6 +179,29 @@ html, body{
     color: white;
     font-size: 15px;
   }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  
 
 
   }
