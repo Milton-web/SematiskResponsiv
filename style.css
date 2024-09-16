@@ -1,133 +1,127 @@
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .div {
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  .content {
-    background-color: white;
-  }
-  
-  .section1 {
-    text-align: center;
-    font-family: cursive;
-  }
-  
-  .footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer p {
-    margin: 5px;
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* huvudmeny */
-  .body,
-  ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .navbar-logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-  }
-  
-  .navbar-links li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  .hamburger{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    background: none;
-    border: none;
-  }
+.div {
+  padding: 20px;
+  margin: 10px;
+}
 
- .line{
+.content {
+  background-color: white;
+}
+
+.section1 {
+  text-align: center;
+  font-family: cursive;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* huvudmeny */
+.body,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.navbar-links li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.line {
   width: 100%;
   height: 3px;
   background-color: white;
- }
-
- .image-text-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  gap: 2rem;
 }
 
-.hero-background{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.897)), url("hero2jpg.jpg");
+.hero-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.897)),
+    url("hero2jpg.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
 }
 
-.hero-text{
+.hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -137,40 +131,100 @@ html, body{
   font-size: 30px;
 }
 
-.hero-text button{
- border: none;
- outline: 0;
- display: inline-block;
- padding: 10px 25px;
- color: white;
- background-color: blue;
- text-align: center;
- cursor: pointer;
-
-  
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  cursor: pointer;
 }
 
-.hero-text button:hover{
+.hero-text button:hover {
   background-color: purple;
   color: white;
 }
 
+/* info section */
+.info-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
+.info-header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-  
- @media (max-width: 768px) {
+.info-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
 
-  .hero-background{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.897)), url("hero2jpg.jpg");
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 30%;
+  text-align: center;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .info-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .info-header p {
+    font-size: 1.1rem;
+  }
+
+  .image-row {
+    gap: 15px;
+  }
+
+  .image-container {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* herobanner */
+  .hero-background {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.541),
+        rgba(0, 0, 0, 0.897)
+      ),
+      url("hero2jpg.jpg");
     height: 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
-    
   }
-  .hero-text{
+  .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -180,6 +234,7 @@ html, body{
     font-size: 15px;
   }
 
+  /* navbar */
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -201,7 +256,23 @@ html, body{
     display: flex;
   }
 
-  
-
-
+  /* info section */
+  .info-header h2 {
+    font-size: 1.5rem;
   }
+
+  .info-header p {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+  }
+}
