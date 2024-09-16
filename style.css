@@ -210,6 +210,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
   /* herobanner */
   .hero-background {
     background-image: linear-gradient(
@@ -276,3 +277,4 @@ ul {
     z-index: 10;
   }
 }
+
